@@ -12,7 +12,7 @@ pipeline{
         stage('Test')
         {
             steps{
-                scripts{
+                script{
                     echo "running tests"
                 }
             }
@@ -20,7 +20,7 @@ pipeline{
         stage('Deploy')
         {
             steps{
-                scripts{
+                script{
                     echo 'deploying application'
                 }
             }
